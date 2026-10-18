@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<base href="/">
+<title>The Front Bottoms · Paddy Has Needs</title>
+<meta name="description" content="The Front Bottoms: seen live 1 time. Dates, venues and photos from every show.">
+<link rel="canonical" href="https://paddyjones.com/artists/the-front-bottoms/">
+<meta name="theme-color" content="#1A1426">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Paddy Has Needs">
+<meta property="og:title" content="The Front Bottoms · Paddy Has Needs">
+<meta property="og:description" content="The Front Bottoms: seen live 1 time. Dates, venues and photos from every show.">
+<meta property="og:url" content="https://paddyjones.com/artists/the-front-bottoms/">
+<meta property="og:image" content="https://paddyjones.com/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The War On Drugs on stage, photographed by Paddy">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Front Bottoms · Paddy Has Needs">
+<meta name="twitter:description" content="The Front Bottoms: seen live 1 time. Dates, venues and photos from every show.">
+<meta name="twitter:image" content="https://paddyjones.com/og.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://paddyjones.com/#site", "url": "https://paddyjones.com/", "name": "Paddy Has Needs", "description": "Every gig Paddy has been to since 2007 (389 and counting), photos from the pit, his albums of the year since 2010 and a Spotify playlist for every year.", "inLanguage": "en", "author": {"@id": "https://paddyjones.com/#paddy"}}, {"@type": "Person", "@id": "https://paddyjones.com/#paddy", "name": "Paddy Jones", "url": "https://paddyjones.com/"}]}</script>
+
+<title>Paddy Has Needs</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400&amp;family=Martian+Mono:wght@400;500&amp;display=swap">
+<style>
+/* Layout: one site, three rooms. Sticky ticket-strip nav; Gig Log (stub header, stats, boards, table),
+   Albums of the Year (year rail, sleeve + ranked list), Artists (index + one page per artist/event:
+   tags, AOTY entries, then every gig as its own stub card with Instagram photos, video and captions). */
+:root {
+  /* Layout: full-bleed photo hero, sideways photo strip, then stats, lists and covers on a 1200px column.
+     One deliberate dark look: poster ink ground, cream type, safety-orange accent. */
+  --bg: #1A1426; --paper: #231B33; --ink: #EEE6D6; --muted: #B9AFC6; --rule: #3A3150;
+  --accent: #FF4F1F;  /* poster orange */
+  --fest: #F5B841;    /* festival amber */
+  --club: #8D84A0;
+  --gold: #F5B841;    /* number ones */
+  --shade: rgba(12,9,18,.94);
+  --navbg: #120E1B; --navfg: #EEE6D6;
+  --font-display: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-data: "Martian Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.5; margin: 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 64px;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--navbg); }
+.wrap { max-width: 1200px; margin: 0 auto; display: grid; gap: 28px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 900; letter-spacing: -.03em; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(2.6rem, 8vw, 4.6rem); line-height: .9; }
+h2 { font-size: 1.6rem; line-height: 1; }
+h3 { font-size: 1.35rem; line-height: 1; }
+.eyebrow { font-family: var(--font-data); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+p { margin: 0; max-width: 65ch; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 50; background: var(--accent); color: var(--bg); font-weight: 800; padding: 10px 16px; border-radius: 6px; text-decoration: none; }
+.skip:focus { top: calc(env(safe-area-inset-top, 0px) + 8px); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+main:focus { outline: none; }
+.num { font-variant-numeric: tabular-nums; }
+.lede { color: var(--muted); }
+.note { font-size: .8rem; color: var(--muted); }
+[hidden] { display: none !important; }
+
+
+/* home: full-bleed hero photo, photo strip, stats row, two lists, number ones */
+#v-home { margin-top: -28px; gap: 0; }
+.view.wrap { width: 100%; }
+@media (max-width: 600px) { .hero h1 { line-height: .92; } .hero-in { padding-block: 96px 32px; } }
+.bleed { width: 100vw; margin-left: calc(50% - 50vw); }
+.hero { position: relative; min-height: min(760px, 92vh); display: flex; flex-direction: column; justify-content: flex-end; }
+.hero .bgimg { position: absolute; inset: 0; overflow: hidden; }
+.hero .bgimg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero .bgimg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,20,38,.6) 0%, rgba(26,20,38,.05) 25%, rgba(26,20,38,.55) 50%, rgba(26,20,38,.97) 85%); }
+.hero-in { position: relative; max-width: 1200px; width: 100%; box-sizing: border-box; margin: 0 auto; padding-block: 120px 48px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 32px; align-items: end; }
+.hero-in .tagline { align-self: flex-start; background: var(--accent); color: var(--bg); font-family: var(--font-data); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; padding: 7px 12px; }
+.hero h1 { font-size: clamp(4rem, 10vw, 9.25rem); line-height: .86; letter-spacing: -.045em; }
+.hero h1 span { color: var(--accent); }
+.hero p { text-shadow: 0 1px 3px rgba(0,0,0,.6); font-size: 1.15rem; line-height: 1.5; max-width: 44ch; }
+.hero-cap { position: absolute; right: max(16px, env(safe-area-inset-right, 0px)); top: 16px; font-family: var(--font-data); font-size: .68rem; color: var(--ink); opacity: .8; text-decoration: none; }
+.search { position: relative; display: grid; gap: 14px; }
+.search input { width: 100%; font: 500 1.1rem var(--font-body); padding: 17px 22px; border: 2px solid var(--accent); border-radius: 999px; background: rgba(26,20,38,.78); color: var(--ink); }
+.search input::placeholder { color: var(--muted); }
+.results { position: absolute; left: 0; right: 0; top: calc(100% + 8px); z-index: 4; display: grid; gap: 16px; background: var(--paper); border: 1px solid var(--rule); border-radius: 14px; padding: 14px 18px; max-height: 60vh; overflow: auto; box-shadow: 0 18px 40px rgba(0,0,0,.45); }
+.results h3 { font-size: 1rem; color: var(--muted); letter-spacing: 0; }
+.results ul { list-style: none; margin: 6px 0 0; padding: 0; display: grid; }
+.results li a { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--rule); color: inherit; text-decoration: none; }
+.results li a:hover b { color: var(--accent); }
+.results li small { font-family: var(--font-data); font-size: .68rem; color: var(--muted); white-space: nowrap; }
+.strip { display: flex; gap: 8px; overflow-x: auto; padding: 8px 8px 0; scrollbar-width: thin; }
+.strip a { position: relative; flex: 0 0 auto; height: 300px; display: block; color: var(--ink); text-decoration: none; }
+.strip img { height: 100%; width: auto; max-width: none; display: block; }
+.strip span { position: absolute; left: 0; bottom: 0; background: rgba(26,20,38,.82); font-family: var(--font-data); font-size: .66rem; padding: 6px 9px; opacity: 0; transition: opacity .15s; }
+.strip a:hover span, .strip a:focus-visible span { opacity: 1; }
+@media (max-width: 600px) { .strip a { height: 200px; } .strip span { opacity: 1; } }
+.home-body { display: grid; gap: 72px; padding-top: 64px; }
+.hstats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 40px; border-top: 1px solid var(--rule); padding-top: 32px; }
+.hstat { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.hstat .lbl { font-family: var(--font-data); font-size: .75rem; text-transform: uppercase; color: var(--muted); }
+.hstat .fig { font-weight: 900; font-size: clamp(5rem, 9vw, 7rem); line-height: .9; letter-spacing: -.05em; }
+.hstat .fig.o { color: var(--accent); }
+.hstat .nm { font-size: 1.25rem; font-weight: 800; color: var(--ink); text-decoration: none; }
+.hstat .sub { color: var(--muted); }
+.hstat .sub a { color: var(--muted); }
+.hplay { background: var(--accent); color: var(--bg); padding: 24px; border-radius: 16px; display: flex; flex-direction: column; gap: 12px; }
+.hplay .lbl { color: var(--bg); }
+.hplay b { font-weight: 900; font-size: 2.4rem; line-height: 1; letter-spacing: -.02em; }
+.hplay a.btn { align-self: flex-start; background: var(--bg); color: var(--ink); text-decoration: none; font-weight: 800; padding: 12px 20px; border-radius: 999px; }
+.hplay iframe { display: block; width: 100%; border: 0; border-radius: 12px; }
+.hlists { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 56px; }
+.hlists h2, .hones h2 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: 12px; }
+.hlists h2 span { color: var(--accent); }
+.hl { list-style: none; margin: 0; padding: 0; display: grid; }
+.hl li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--rule); }
+.hl li:last-child { border-bottom: 1px solid var(--rule); }
+.hl .w { min-width: 0; }
+.hl .w a, .hl .w b { font-weight: 800; color: var(--ink); text-decoration: none; }
+.hl .w a:hover { color: var(--accent); }
+.hl .w span { color: var(--muted); }
+.hl .d { font-family: var(--font-data); font-size: .8rem; color: var(--muted); white-space: nowrap; }
+.hl.up .d { color: var(--accent); }
+.more-link { margin-top: 12px; font-family: var(--font-data); font-size: .75rem; color: var(--accent); text-transform: uppercase; background: none; border: 0; padding: 0; cursor: pointer; justify-self: start; text-align: left; }
+.hones .head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 10px; }
+.hones .head a { font-family: var(--font-data); font-size: .75rem; color: var(--accent); text-transform: uppercase; }
+.hones .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr)); gap: 22px 18px; }
+.hones .grid a { display: flex; flex-direction: column; gap: 8px; color: var(--ink); text-decoration: none; min-width: 0; }
+.hones .grid .cv { display: grid; grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr)); aspect-ratio: 1; max-width: 100%; border-radius: 4px; overflow: hidden; background: var(--rule); }
+.hones .grid .cv img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hones .grid a:hover .cv { outline: 2px solid var(--accent); outline-offset: 2px; }
+.hones .yr { font-family: var(--font-data); font-size: .75rem; color: var(--accent); }
+.hones .t { font-weight: 800; line-height: 1.2; }
+.hones .t span { display: block; font-weight: 400; color: var(--muted); }
+
+/* nav: a strip of ticket tabs */
+@media (max-width: 600px) { .nav .lg { display: none; } .nav a.tab { padding-inline: 10px; letter-spacing: .06em; } .nav-in { justify-content: space-between; } }
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; margin: 0 calc(-1 * max(16px, env(safe-area-inset-left, 0px))) 0; padding: 0 max(16px, env(safe-area-inset-left, 0px)); background: var(--navbg); }
+@media (max-width: 520px) { .nav .brand { display: none; } }
+.nav-in { max-width: 1200px; margin: 0 auto; display: flex; align-items: stretch; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+.nav .brand { font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; text-transform: uppercase; color: var(--navfg); padding: 12px 14px 10px 0; margin-right: 6px; white-space: nowrap; text-decoration: none; }
+.nav a.tab { font-family: var(--font-data); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--navfg); opacity: .7; text-decoration: none; padding: 14px 12px 12px; white-space: nowrap; border-bottom: 3px solid transparent; }
+.nav a.tab:hover { opacity: 1; }
+.nav a.tab[aria-current="page"] { opacity: 1; border-bottom-color: var(--accent); }
+main { padding-top: 28px; }
+
+/* artist tag links: used everywhere a name appears */
+a.tag { color: inherit; text-decoration: underline; text-decoration-color: var(--rule); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+a.tag:hover { text-decoration-color: var(--accent); color: var(--accent); }
+.chip { display: inline-flex; align-items: center; min-height: 24px; font-family: var(--font-data); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; padding: 1px 7px; border-radius: 99px; border: 1px solid var(--accent); color: var(--accent); white-space: nowrap; text-decoration: none; display: inline-block; }
+a.chip:hover { background: var(--accent); color: var(--paper); }
+.chip.gold { border-color: var(--gold); color: var(--gold); }
+a.chip.gold:hover { background: var(--gold); color: var(--paper); }
+.chip.quiet { border-color: var(--rule); color: var(--muted); }
+.chip.cam { border-color: var(--fest); color: var(--fest); }
+
+/* ===== Gig Log ===== */
+.stub { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; display: grid; grid-template-columns: 1fr auto; position: relative; overflow: hidden; }
+.stub-main { padding: 24px 24px 22px; display: grid; gap: 10px; min-width: 0; }
+.stub-side { border-left: 2px dashed var(--rule); padding: 24px 18px; display: grid; align-content: center; gap: 4px; text-align: center; width: 170px; }
+.stub-side .big { font-family: var(--font-display); font-weight: 900; font-size: 3.4rem; line-height: .9; color: var(--accent); }
+.stub::before, .stub::after { content: ""; position: absolute; width: 22px; height: 22px; border-radius: 50%; background: var(--bg); border: 1px solid var(--rule); right: 159px; }
+.stub::before { top: -12px; } .stub::after { bottom: -12px; }
+@media (max-width: 560px) {
+  .stub { grid-template-columns: 1fr; }
+  .stub-side { width: auto; border-left: 0; border-top: 2px dashed var(--rule); grid-auto-flow: column; justify-content: start; align-items: baseline; gap: 10px; text-align: left; }
+  .stub::before, .stub::after { display: none; }
+}
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.stat { background: var(--paper); padding: 14px 16px; display: grid; gap: 2px; }
+.stat b { font-family: var(--font-display); font-size: 2rem; font-weight: 900; line-height: 1; }
+.stat span { font-size: .8rem; color: var(--muted); }
+.grid2 { display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; }
+@media (max-width: 820px) { .grid2 { grid-template-columns: 1fr; } }
+.panel { display: grid; gap: 12px; align-content: start; min-width: 0; }
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; border-bottom: 2px solid var(--ink); padding-bottom: 6px; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: .78rem; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+#chart svg { width: 100%; height: auto; display: block; }
+.board { list-style: none; margin: 0; padding: 0; display: grid; }
+.board li { display: grid; grid-template-columns: 1.6rem 1fr auto; gap: 10px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--rule); }
+.board .rank { font-family: var(--font-data); font-size: .75rem; color: var(--muted); }
+.board .name { min-width: 0; overflow-wrap: anywhere; display: block; color: inherit; text-decoration: none; cursor: pointer; background: none; border: 0; padding: 0; font: inherit; text-align: left; }
+.board .name:hover .label { text-decoration: underline; }
+.board .bar { height: 6px; background: var(--accent); border-radius: 3px; margin-top: 3px; opacity: .85; }
+.board .count { font-family: var(--font-data); font-variant-numeric: tabular-nums; font-weight: 500; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.controls input[type=search] { flex: 1 1 240px; min-width: 0; font: inherit; padding: 9px 12px; border: 1px solid var(--rule); border-radius: 4px; background: var(--paper); color: var(--ink); }
+.chipbtn { font: inherit; font-size: .82rem; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper); color: var(--ink); cursor: pointer; }
+.chipbtn[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.tablebox { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+table { border-collapse: collapse; width: 100%; min-width: 720px; font-size: .88rem; }
+th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--font-data); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 500; background: var(--paper); }
+td.date { font-family: var(--font-data); font-size: .8rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+td .support { color: var(--muted); font-size: .8rem; }
+.pill { display: inline-block; font-family: var(--font-data); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; padding: 2px 7px; border-radius: 3px; border: 1px solid currentColor; white-space: nowrap; }
+.t-gig { color: var(--accent); } .t-festival { color: var(--fest); } .t-other { color: var(--club); }
+.s-upcoming { color: var(--accent); }
+.count-line { font-size: .82rem; color: var(--muted); }
+td .media-link { display: inline-block; margin-top: 4px; }
+footer { font-size: .8rem; color: var(--muted); display: grid; gap: 6px; border-top: 1px solid var(--rule); padding-top: 14px; }
+
+/* ===== Albums ===== */
+.facts { display: flex; flex-wrap: wrap; gap: 8px 22px; font-family: var(--font-data); font-size: .8rem; color: var(--muted); }
+.facts b { color: var(--ink); font-weight: 500; }
+.rail { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; scrollbar-width: thin; }
+.rail a { flex: 0 0 auto; font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; letter-spacing: .02em; padding: 6px 12px 4px; border: 1px solid var(--rule); background: var(--paper); color: var(--muted); border-radius: 4px; text-decoration: none; }
+.rail a:hover { color: var(--ink); border-color: var(--muted); }
+.rail a[aria-current="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.year { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 32px; align-items: start; }
+@media (max-width: 760px) { .year { grid-template-columns: 1fr; } }
+.lead { display: grid; gap: 14px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 64px); }
+@media (max-width: 760px) { .lead { position: static; } }
+.cover { display: grid; gap: 6px; }
+.cover .art { display: grid; grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr)); gap: 6px; }
+.cover img { width: 100%; max-width: 100%; aspect-ratio: 1; object-fit: cover; display: block; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,.15), 0 12px 30px -16px rgba(0,0,0,.45); background: var(--rule); }
+.cover .yr { font-family: var(--font-data); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+.cover .t { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; line-height: .92; font-size: clamp(1.8rem, 5vw, 2.4rem); text-wrap: balance; overflow-wrap: anywhere; }
+.cover .a { font-weight: 600; }
+.lead .why { font-style: italic; color: var(--muted); font-size: .95rem; }
+.lead .meta { display: flex; flex-wrap: wrap; gap: 6px 14px; font-family: var(--font-data); font-size: .76rem; color: var(--muted); }
+.lead .note { font-size: .88rem; border-left: 2px solid var(--gold); padding-left: 10px; }
+ol.list { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid var(--rule); }
+ol.list li { display: grid; grid-template-columns: 3.2rem minmax(0, 1fr); gap: 0 12px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.rk { font-family: var(--font-display); font-weight: 900; font-size: 1.9rem; line-height: 1; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+li.top .rk { color: var(--gold); }
+.al { display: grid; gap: 4px; min-width: 0; }
+.al .head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.al .ttl { font-weight: 600; font-size: 1.02rem; }
+.al .art { color: var(--muted); }
+.wr { display: grid; gap: 8px; margin-top: 2px; }
+.wr p { font-size: .92rem; color: var(--muted); max-width: 68ch; }
+li.top .wr p { color: var(--ink); }
+.plx { margin-top: 18px; display: grid; gap: 8px; }
+.plx .plh { font-family: var(--font-data); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.plx iframe { display: block; width: 100%; border: 0; border-radius: 12px; }
+.yt { margin: 8px 0 0; max-width: 560px; display: grid; gap: 6px; }
+.yt .ytf { position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 6px; overflow: hidden; background: var(--paper); }
+.yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.yt figcaption { font-size: .82rem; color: var(--muted); }
+.vid { display: grid; grid-template-columns: 168px minmax(0, 1fr); gap: 12px; align-items: center; margin-top: 6px; text-decoration: none; color: inherit; max-width: 520px; }
+.vid .th { position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 3px; overflow: hidden; background: var(--rule); }
+.vid .th img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vid .th::after { content: ""; position: absolute; left: 50%; top: 50%; width: 38px; height: 26px; margin: -13px 0 0 -19px; border-radius: 7px; background: rgba(0,0,0,.72); }
+.vid .th::before { content: ""; position: absolute; left: 50%; top: 50%; z-index: 1; margin: -6px 0 0 -3px; border-style: solid; border-width: 6px 0 6px 10px; border-color: transparent transparent transparent #fff; }
+.vid .vt { font-size: .85rem; line-height: 1.35; display: grid; gap: 2px; min-width: 0; }
+.vid .vt small { font-family: var(--font-data); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.vid:hover .vt b { text-decoration: underline; }
+.vid .vt b { font-weight: 500; overflow-wrap: anywhere; }
+@media (max-width: 460px) { .vid { grid-template-columns: 120px minmax(0, 1fr); } }
+.more { font-family: var(--font-data); font-size: .76rem; color: var(--muted); padding-top: 10px; }
+.all { display: grid; gap: 18px; }
+.ones { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+.one { display: grid; gap: 6px; text-decoration: none; color: inherit; }
+.one .mini { aspect-ratio: 1; max-width: 100%; border-radius: 2px; position: relative; overflow: hidden; display: grid; grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr)); background: var(--rule); }
+.one .mini img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.one .mini span { position: absolute; left: 0; bottom: 0; background: var(--ink); color: var(--bg); font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; line-height: 1; padding: 5px 7px 3px; }
+.one .cap { font-size: .82rem; line-height: 1.3; }
+.one .cap b { font-weight: 600; display: block; }
+.one:hover .mini { outline: 2px solid var(--accent); outline-offset: 2px; }
+.most { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 0 28px; }
+.most div { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-bottom: 1px solid var(--rule); font-size: .92rem; }
+.most .yrs { font-family: var(--font-data); font-size: .74rem; color: var(--muted); text-align: right; }
+
+/* ===== Artists index ===== */
+.idx { columns: 3 230px; column-gap: 28px; }
+.idx .letter { break-inside: avoid; margin-bottom: 18px; }
+.idx .letter h3 { color: var(--accent); border-bottom: 2px solid var(--ink); padding-bottom: 2px; margin-bottom: 4px; }
+.idx a.row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--rule); color: inherit; text-decoration: none; font-size: .92rem; }
+.idx a.row:hover .nm { text-decoration: underline; color: var(--accent); }
+.idx .marks { display: flex; gap: 6px; font-family: var(--font-data); font-size: .7rem; color: var(--muted); white-space: nowrap; }
+.idx .marks .g { color: var(--accent); } .idx .marks .y { color: var(--gold); } .idx .marks .p { color: var(--fest); }
+.keyline { display: flex; gap: 18px; flex-wrap: wrap; font-family: var(--font-data); font-size: .72rem; color: var(--muted); }
+.keyline b { font-weight: 500; }
+.wall { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+.wall a { display: grid; gap: 4px; text-decoration: none; color: inherit; font-size: .82rem; line-height: 1.25; }
+.wall img { width: 100%; max-width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 3px; display: block; background: var(--rule); }
+.wall a:hover img { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wall small { font-family: var(--font-data); font-size: .66rem; color: var(--muted); }
+
+/* ===== Artist page ===== */
+.crumb { font-family: var(--font-data); font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; }
+.ahead { display: grid; gap: 12px; }
+.ahead .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.pl { margin-top: 18px; display: grid; grid-template-columns: auto minmax(0,1fr); gap: 12px; align-items: center; padding: 12px 14px; border: 1px solid var(--rule); border-radius: 10px; color: inherit; text-decoration: none; } .pl:hover b, .pl:focus-visible b { text-decoration: underline; } .pl .pli { color: #1DB954; display: flex; } .pl .plt { display: grid; gap: 2px; min-width: 0; } .pl small { font-family: var(--font-data); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); } .pl .plt > span { color: var(--muted); font-size: .85rem; }
+.aoty { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.aoty a.entry { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--rule); color: inherit; text-decoration: none; }
+.aoty a.entry:hover .et { text-decoration: underline; }
+.aoty .yrk { font-family: var(--font-display); font-weight: 900; font-size: 1.6rem; line-height: 1; color: var(--gold); }
+.aoty .yrk small { display: block; font-family: var(--font-data); font-weight: 400; font-size: .7rem; color: var(--muted); letter-spacing: .06em; margin-top: 4px; }
+.aoty .et { font-weight: 600; }
+.aoty .ep { color: var(--muted); font-size: .9rem; font-style: italic; }
+.shows { display: grid; gap: 22px; }
+.show { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; display: grid; grid-template-columns: 150px minmax(0, 1fr); overflow: hidden; scroll-margin-top: 70px; }
+.show .when { border-right: 2px dashed var(--rule); padding: 18px 14px; display: grid; align-content: start; gap: 2px; text-align: center; }
+.show .when .d { font-family: var(--font-display); font-weight: 900; font-size: 2.6rem; line-height: .9; }
+.show .when .m { font-family: var(--font-data); font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.show .when .n { font-family: var(--font-data); font-size: .68rem; color: var(--accent); margin-top: 8px; letter-spacing: .08em; text-transform: uppercase; }
+.show .body { padding: 18px 20px 20px; display: grid; gap: 12px; min-width: 0; align-content: start; }
+.show .ttl { display: grid; gap: 3px; }
+.show .ttl h3 { font-size: 1.45rem; }
+.show .where { color: var(--muted); font-size: .9rem; }
+.show .bill { font-size: .86rem; color: var(--muted); }
+.show .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 6px; }
+.photos button { padding: 0; border: 0; background: var(--rule); border-radius: 3px; overflow: hidden; cursor: zoom-in; aspect-ratio: 1; max-width: 100%; display: block; }
+.photos img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photos button:hover img { opacity: .88; }
+.clip { max-width: 360px; }
+.clip video { width: 100%; max-width: 100%; max-height: 480px; border-radius: 4px; background: #000; display: block; }
+.clip small { font-family: var(--font-data); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.ig { display: grid; gap: 10px; }
+.ig blockquote { margin: 0; padding: 2px 0 2px 12px; border-left: 2px solid var(--fest); display: grid; gap: 4px; }
+.ig blockquote p { font-size: .92rem; white-space: pre-line; overflow-wrap: anywhere; }
+.ig cite { font-style: normal; font-family: var(--font-data); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.ig .tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+.empty { color: var(--muted); font-size: .88rem; }
+@media (max-width: 560px) {
+  .show { grid-template-columns: 1fr; }
+  .show .when { border-right: 0; border-bottom: 2px dashed var(--rule); grid-auto-flow: column; justify-content: start; align-items: baseline; gap: 10px; text-align: left; padding: 12px 16px; }
+  .show .when .d { font-size: 1.9rem; } .show .when .n { margin-top: 0; }
+  .show .body { padding: 14px 16px 16px; }
+}
+
+/* lightbox */
+.lb { position: fixed; inset: 0; z-index: 20; background: var(--shade); display: grid; grid-template-rows: 1fr auto; padding: calc(env(safe-area-inset-top, 0px) + 16px) max(16px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 16px) max(16px, env(safe-area-inset-left, 0px)); }
+.lb img { max-width: 100%; max-height: 100%; margin: auto; object-fit: contain; display: block; min-height: 0; }
+.lb .bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: #e7ebf1; font-family: var(--font-data); font-size: .76rem; padding-top: 10px; }
+.lb button { font: inherit; color: #e7ebf1; background: transparent; border: 1px solid rgba(231,235,241,.4); border-radius: 4px; padding: 7px 12px; cursor: pointer; }
+.lb button:hover { border-color: #e7ebf1; }
+@media (prefers-reduced-motion: no-preference) { .view { animation: rise .2s ease-out; } @keyframes rise { from { transform: translateY(4px); } to { transform: none; } } }
+</style>
+</head>
+<body>
+
+
+<nav class="nav" aria-label="Site">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="nav-in">
+    <a class="brand" href="/">Paddy Has Needs</a>
+    <a class="tab" href="/" data-v="home">Home</a>
+    <a class="tab" href="/gigs/" data-v="gigs">Gig<span class="lg"> Log</span></a>
+    <a class="tab" href="/albums/" data-v="albums">Albums<span class="lg"> of the Year</span></a>
+    <a class="tab" href="/artists/" data-v="artists" aria-current="page">Artists</a>
+  </div>
+</nav>
+
+<main class="wrap" id="main" tabindex="-1">
+  
+
+
+  <!-- ============ HOME ============ -->
+  <section class="view wrap" id="v-home" hidden="">
+    <section class="hero bleed">
+      <div class="bgimg"><img id="heroImg" src="h/hero.jpg" alt="The War On Drugs on stage"></div>
+      <a class="hero-cap" id="heroCap" href="/artists/the-war-on-drugs/">The War On Drugs · 2022</a>
+      <div class="hero-in">
+        <div style="display:flex;flex-direction:column;align-items:flex-start;gap:18px">
+          <span class="tagline">A living music journal</span>
+          <h1>Paddy<br>Has <span>Needs</span></h1>
+        </div>
+        <div class="search" role="search">
+          <p>Using email receipts and photos I've managed to find most gigs ive been to since 2007, logged them and aligned them to the photos I took. I've also brought my annual year end music blogs and spotify playlists from each year that I have - 15 years of reviews and tracks - Enjoy!</p>
+          <label for="hq" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search the site</label>
+          <div style="position:relative">
+            <input type="search" id="hq" placeholder="Search bands, venues, albums, years" autocomplete="off">
+            <div class="results" id="hres" hidden="" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="strip bleed" id="hStrip" aria-label="Gig photos"></section>
+    <div class="home-body">
+      <section class="hstats">
+        <div class="hstat"><span class="lbl">Shows seen *since 2007</span><span class="fig num" id="hTotal">389</span><span class="sub" id="hSplit">322 gigs, 53 festivals, 14 club nights</span></div>
+        <div class="hstat"><span class="lbl">Most seen</span><span class="fig o num" id="hMostN">12</span><span id="hMostName"><a class="nm" href="/artists/the-national/">The National</a></span><span class="sub" id="hMostRun"><a class="" href="/artists/ezra-furman/">Ezra Furman</a> 10 · <a class="" href="/artists/jeff-rosenstock/">Jeff Rosenstock</a> 9 · <a class="" href="/artists/the-magnetic-fields/">The Magnetic Fields</a> 9</span></div>
+        <div class="hstat hplay" id="hPlay"><span class="lbl">Playlist · 2026</span><b>2026 Tracks</b><iframe src="https://open.spotify.com/embed/playlist/0PyaYvtewOYXwGD6dbsnri?utm_source=generator&amp;theme=0" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="2026 Tracks on Spotify"></iframe></div>
+      </section>
+      <section class="hlists">
+        <div style="display:grid"><h2 id="hYearH">Gigs this year:&nbsp;<span>19</span></h2><ol class="hl" id="hYear"></ol></div>
+        <div style="display:grid;align-content:start"><h2>Next up</h2><ol class="hl up" id="hUp"></ol></div>
+      </section>
+      <section class="hones" style="display:grid;gap:20px">
+        <div class="head"><h2 style="margin:0">Annual Reviews: My #1's</h2><a href="/albums/">Every list since 2010 →</a></div>
+        <div class="grid" id="hOnes"></div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ============ GIG LOG ============ -->
+  <section class="view wrap" id="v-gigs" hidden="">
+    <header class="stub">
+      <div class="stub-main">
+        <span class="eyebrow">Admit one · 2007 to now</span>
+        <h1>Paddy's Gig Log</h1>
+        <p class="lede">Every show I could find a ticket for, from Anathallo at the Borderline in 2008 to whatever's on next week in Brooklyn. Festivals and club nights are logged as events but kept out of the band stats, since nobody remembers exactly who they saw at Gov Ball.</p>
+        <p class="lede">Tap any name for that artist's page: every time I've seen them, photos from Instagram, and where they turn up in my albums of the year.</p>
+      </div>
+      <div class="stub-side">
+        <span class="eyebrow">Shows attended</span>
+        <span class="big num" id="bigCount">389</span>
+        <span class="eyebrow" id="yearsSpan">2007–2026</span>
+      </div>
+    </header>
+    <section class="stats" id="stats" aria-label="Summary"></section>
+    <div class="grid2">
+      <section class="panel" aria-labelledby="h-year">
+        <div class="panel-head"><h2 id="h-year">Shows per year</h2>
+          <div class="legend"><span><i style="background:var(--accent)"></i>Gigs</span><span><i style="background:var(--fest)"></i>Festivals</span><span><i style="background:var(--club)"></i>Club nights &amp; other</span></div>
+        </div>
+        <div id="chart"></div>
+        <p class="note" id="chartNote">Busiest year: 2025 with 38 shows. 2020 has just one: New Colossus in March, the week everything shut down. Everything else booked that year was cancelled.</p>
+      </section>
+      <section class="panel" aria-labelledby="h-artists">
+        <div class="panel-head"><h2 id="h-artists">Most seen</h2><span class="eyebrow">headline or support</span></div>
+        <ol class="board" id="topArtists"></ol>
+      </section>
+    </div>
+    <div class="grid2">
+      <section class="panel" aria-labelledby="h-venues">
+        <div class="panel-head"><h2 id="h-venues">Most visited venues</h2><span class="eyebrow">all event types</span></div>
+        <ol class="board" id="venues"></ol>
+      </section>
+      <section class="panel" aria-labelledby="h-cities">
+        <div class="panel-head"><h2 id="h-cities">Most visited cities</h2><span class="eyebrow">all event types</span></div>
+        <ol class="board" id="cities"></ol>
+      </section>
+    </div>
+    <section class="panel" aria-labelledby="h-log">
+      <div class="panel-head"><h2 id="h-log">The full log</h2><span class="count-line" id="countLine">394 of 394 shows</span></div>
+      <div class="controls">
+        <input type="search" id="q" placeholder="Search band, venue, city or year" aria-label="Search the log">
+        <div class="controls" role="group" aria-label="Filter by type" id="typeFilter"></div>
+      </div>
+      <div class="tablebox">
+        <table>
+          <thead><tr><th>Date</th><th>Who</th><th>Where</th><th>Type</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </section>
+    <footer><span>Pieced together from ticket emails, calendar entries and old Facebook and Instagram posts, with gaps filled from setlist.fm. Music only: no sport, comedy or theatre. Shows before 2007 or paid for on the door are probably missing.</span></footer>
+  </section>
+
+  <!-- ============ ALBUMS ============ -->
+  <section class="view wrap" id="v-albums" hidden="">
+    <header style="display:grid;gap:12px">
+      <div class="eyebrow">Paddy Has Needs · annual blog, 2011–2026</div>
+      <h1>Albums of the Year</h1>
+      <p class="lede">Every year-end list from the blog, ranked the way Paddy ranks them: by how much each record actually got played.</p>
+      <div class="facts" id="facts"></div>
+    </header>
+    <nav class="rail" id="rail" aria-label="Choose a year"></nav>
+    <section class="year" id="year" aria-live="polite"></section>
+    <section class="all"><h2>Every number one</h2><div class="ones" id="ones"></div></section>
+    <section class="all"><h2>Regulars</h2><p class="lede">Artists who made the list in three or more years.</p><div class="most" id="most"></div></section>
+    <footer><span>Words from the Paddy Has Needs blog, 2011–2026. Album artwork via Apple Music. Videos open on YouTube.</span></footer>
+  </section>
+
+  <!-- ============ ARTISTS INDEX ============ -->
+  <section class="view wrap" id="v-artists" hidden="">
+    <header style="display:grid;gap:12px">
+      <div class="eyebrow">Everyone in the log and the lists</div>
+      <h1>Artists</h1>
+      <p class="lede">One page per artist, with every gig in date order, photos and clips from Instagram where I posted any, and their appearances in Albums of the Year. Festivals and nights out get a page per event series.</p>
+    </header>
+    <section class="panel" aria-labelledby="h-wall">
+      <div class="panel-head"><h2 id="h-wall">Latest photos</h2><span class="eyebrow">from Instagram</span></div>
+      <div class="wall" id="wall"></div>
+    </section>
+    <section class="panel" aria-labelledby="h-idx">
+      <div class="panel-head"><h2 id="h-idx">A to Z</h2><span class="count-line" id="idxCount">394 pages</span></div>
+      <div class="controls">
+        <input type="search" id="aq" placeholder="Find an artist or festival" aria-label="Find an artist">
+        <div class="controls" role="group" aria-label="Filter artists" id="aFilter"></div>
+      </div>
+      <div class="keyline"><span><b class="num" style="color:var(--accent)">3×</b> times seen live</span><span><b style="color:var(--gold)">AOTY</b> in Albums of the Year</span><span><b style="color:var(--fest)">Photos</b> has Instagram photos</span></div>
+      <div class="idx" id="idx"></div>
+    </section>
+  </section>
+
+  <!-- ============ ARTIST PAGE ============ -->
+  <section class="view wrap" id="v-artist">
+    <a class="crumb" href="/artists/">← All artists</a>
+    <header class="ahead"><span class="eyebrow">Artist</span><h1>The Front Bottoms</h1>
+      <div class="tags"><span class="chip">Seen live ×1</span></div></header>
+    
+    <section class="panel"><div class="panel-head"><h2>Gigs</h2><span class="eyebrow">oldest first</span></div>
+      <div class="shows"><article class="show" id="g147">
+      <div class="when"><span class="d num">15</span><span class="m">Dec 2018</span><span class="n">Show 1 of 1</span></div>
+      <div class="body">
+        <div class="ttl"><span class="eyebrow">Support / on the bill</span><h3>Manchester Orchestra</h3>
+          <span class="where">Brooklyn Steel · Brooklyn</span>
+          <span class="bill">Bill: <a class="tag" href="/artists/manchester-orchestra/">Manchester Orchestra</a></span></div>
+        
+        
+        <p class="empty">No photos from this one.</p>
+      </div></article></div></section>
+    </section>
+
+</main>
+
+<div class="lb" id="lb" hidden="" role="dialog" aria-modal="true" aria-label="Photo">
+  <img id="lbImg" alt="">
+  <div class="bar"><span id="lbCap"></span><span style="display:flex;gap:8px"><button type="button" id="lbPrev">Prev</button><button type="button" id="lbNext">Next</button><button type="button" id="lbClose">Close</button></span></div>
+</div>
+
+<script>
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const norm = s => s.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, 'and').replace(/^the /, '').replace(/[^a-z0-9]/g, '');
+function fmtDate(g) {
+  const d = g.date || "", p = g.date_precision;
+  if (p === "day") { const [y,m,dd] = d.split("-"); return `${+dd} ${MONTHS[+m-1]} ${y}`; }
+  if (p === "approx") { const [y,m] = d.split("-"); return `c. ${MONTHS[+m-1]} ${y}`; }
+  if (p === "month") { const [y,m] = d.split("-"); return `${MONTHS[+m-1]} ${y}`; }
+  if (p === "year") return d;
+  if (p === "purchase") return d.slice(0, 4);
+  return "Date unknown";
+}
+const kind = t => t === "gig" ? "gig" : t === "festival" ? "festival" : "other";
+let D, AL, BYKEY, BYSLUG, GBYID;
+const link = (name, cls = "tag") => { const e = BYKEY.get(norm(name)); return e ? `<a class="${cls}" href="#${e.slug}">${esc(name)}</a>` : esc(name); };
+const media = f => "m/" + f;
+const PK = {};
+const pack = n => PK[n] || (PK[n] = fetch('p' + n + '.json').then(r => r.json()));
+const imgURL = async f => { const n = D.packs[f]; return n === undefined ? '' : (await pack(n))[f]; };
+function hydrate(root) { root.querySelectorAll('[data-src]').forEach(el => { const f = el.dataset.src; el.removeAttribute('data-src');
+  imgURL(f).then(u => { if (el.tagName === 'VIDEO') el.poster = u; else el.src = u; }).catch(() => {}); }); }
+
+
+const plCard = (p, year) => HOSTED ? `<div class="plx"><div class="plh">Favourite songs of ${year} · ${esc(p.title)} · ${p.n} songs</div><iframe src="https://open.spotify.com/embed/playlist/${esc(p.id)}?utm_source=generator&theme=0" height="380" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="${esc(p.title)} on Spotify"></iframe></div>` : `<a class="pl" href="https://open.spotify.com/playlist/${esc(p.id)}" target="_blank" rel="noopener"><span class="pli" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M6.5 9.2c3.8-1.1 7.8-.8 11 1M7 12.3c3.2-.9 6.6-.6 9.3.9M7.6 15.2c2.6-.7 5.2-.5 7.4.7" stroke="var(--bg)" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></span><span class="plt"><small>Favourite songs of ${year} · Spotify ↗</small><b>${esc(p.title)}</b><span>${p.n} songs · Listen on Spotify</span></span></a>`;
+/* ---------------- Home ---------------- */
+const HOSTED = true; // set true by the live build: shows the real Spotify player
+const PLAYLIST_NOW = { year: 2026, id: "0PyaYvtewOYXwGD6dbsnri", title: "2026 Tracks", n: 126 };
+const HOME_PHOTOS = [{"key": "hero", "file": "h/hero.jpg", "gig": 48, "title": "The War On Drugs", "date": "2022-01-29", "venue": "", "slug": "a-the-war-on-drugs"}, {"key": "s0", "file": "h/s0.jpg", "gig": 6, "title": "Gorillaz", "date": "2026-09-29", "venue": "Madison Square Garden", "slug": "a-gorillaz"}, {"key": "s1", "file": "h/s1.jpg", "gig": 172, "title": "Getdown Services", "date": "2026-04-16", "venue": "Elsewhere - The Hall", "slug": "a-getdown-services"}, {"key": "s2", "file": "h/s2.jpg", "gig": 422, "title": "Yard Act", "date": "2024-10-12", "venue": "Irving Plaza", "slug": "a-yard-act"}, {"key": "s3", "file": "h/s3.jpg", "gig": 163, "title": "The New Colossus Festival 2025", "date": "2025-03", "venue": "Lower East Side venues", "slug": "a-new-colossus-festival"}, {"key": "s4", "file": "h/s4.jpg", "gig": 107, "title": "Ezra Furman", "date": "2025-10-29", "venue": "Webster Hall", "slug": "a-ezra-furman"}, {"key": "s5", "file": "h/s5.jpg", "gig": 425, "title": "Bodega", "date": "2024-05-18", "venue": "Flemington DIY", "slug": "a-bodega"}, {"key": "s6", "file": "h/s6.jpg", "gig": 441, "title": "Austin City Limits 2018", "date": "2018-10-05", "venue": "Zilker Park", "slug": null}];
+function buildHome() {
+  const att = D.gigs.filter(g => g.status === "attended"), gigsOnly = att.filter(g => g.type === "gig");
+  // hero caption + photo strip
+  const H = HOME_PHOTOS.find(p => p.key === 'hero');
+  if (H) { const c = document.getElementById('heroCap'); c.textContent = `${H.title} · ${H.date.slice(0, 4)}`; c.href = H.slug ? '#' + H.slug : '#gigs'; document.getElementById('heroImg').alt = H.title + ' on stage'; }
+  document.getElementById('hStrip').innerHTML = HOME_PHOTOS.filter(p => p.key !== 'hero').map(p =>
+    `<a href="${p.slug ? '#' + esc(p.slug) : '#gigs'}"><img src="${esc(p.file)}" alt="${esc(p.title)} live" loading="lazy"><span>${esc(p.title)}${p.venue ? ' · ' + esc(p.venue) : ''}</span></a>`).join('');
+  // stats
+  document.getElementById('hTotal').textContent = att.length;
+  document.getElementById('hSplit').textContent = `${gigsOnly.length} gigs, ${att.filter(g => g.type === "festival").length} festivals, ${att.filter(g => kind(g.type) === "other").length} club nights`;
+  const cnt = new Map(); gigsOnly.forEach(g => new Set(g.artists).forEach(a => cnt.set(a, (cnt.get(a) || 0) + 1)));
+  const top = [...cnt.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  document.getElementById('hMostN').textContent = top[0][1];
+  document.getElementById('hMostName').innerHTML = link(top[0][0], 'nm');
+  document.getElementById('hMostRun').innerHTML = top.slice(1, 4).map(([a, c]) => `${link(a, '')} ${c}`).join(' · ');
+  // playlist
+  const P = PLAYLIST_NOW, purl = `https://open.spotify.com/playlist/${P.id}`;
+  document.getElementById('hPlay').innerHTML = `<span class="lbl">Playlist · ${P.year}</span><b>${esc(P.title)}</b>` + (HOSTED
+    ? `<iframe src="https://open.spotify.com/embed/playlist/${P.id}?utm_source=generator&theme=0" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="${esc(P.title)} on Spotify"></iframe>`
+    : `<span>${P.n} songs, added through the year.</span><a class="btn" href="${purl}" target="_blank" rel="noopener">Play on Spotify</a>`);
+  // this year + next up
+  const today = new Date().toISOString().slice(0, 10), Y = today.slice(0, 4);
+  const short = g => { const d = fmtDate(g); return d.replace(' ' + Y, ''); };
+  const who = g => g.type === 'festival' && g.page ? `<a href="#${g.page}">${esc(g.title)}</a>` : g.artists.length ? link(g.artists[0], '') : (g.page ? `<a href="#${g.page}">${esc(g.title)}</a>` : `<b>${esc(g.title)}</b>`);
+  const row = (g, hide) => `<li${hide ? ' hidden' : ''}><span class="w">${who(g)}${g.venue ? ` <span>${esc(g.venue)}</span>` : ''}</span><span class="d">${short(g)}</span></li>`;
+  const seen = att.filter(g => (g.date || '').startsWith(Y)).sort((a, b) => b.date.localeCompare(a.date)), CAP = 6;
+  document.getElementById('hYearH').innerHTML = `Gigs this year:&nbsp;<span>${seen.length}</span>`;
+  const hy = document.getElementById('hYear'); hy.innerHTML = seen.map((g, i) => row(g, i >= CAP)).join('');
+  if (seen.length > CAP) { const b = document.createElement('button'); b.type = 'button'; b.className = 'more-link'; b.id = 'hYearMore'; b.textContent = `Full ${Y} log →`;
+    b.onclick = () => { hy.querySelectorAll('li[hidden]').forEach(li => li.hidden = false); b.remove(); }; hy.after(b); }
+  const key = d => d.length < 7 ? d + '-13' : d;
+  const up = D.gigs.filter(g => g.status === "upcoming" && g.date >= today).sort((a, b) => key(a.date).localeCompare(key(b.date)));
+  document.getElementById('hUp').innerHTML = up.length ? up.map(g => row(g)).join('') : '<li><span class="w"><span>Nothing booked yet.</span></span></li>';
+  // number ones
+  const COVERS = AL.covers, cv = y => [COVERS[y], COVERS[y + '.5']].filter(Boolean);
+  document.getElementById('hOnes').innerHTML = AL.years.slice().reverse().map(y => { const a = y.albums[0], c = cv(y.year);
+    return `<a href="#albums-${y.year}"><span class="cv" style="--n:${c.length || 1}">${c.map(u => `<img src="${u}" alt="" loading="lazy">`).join('')}</span><span class="yr">${y.year}</span><span class="t">${esc(a.title)}<span>${esc(a.artist)}</span></span></a>`; }).join('');
+  // site search
+  const IDX = [];
+  D.artists.filter(e => e.gigs.length || e.albums.length).forEach(e => IDX.push({ k: 'Artists', t: e.name, s: e.kind === 'event' ? 'Festival / event' : [e.gigs.length ? e.gigs.length + ' show' + (e.gigs.length > 1 ? 's' : '') : '', e.albums.length ? 'AOTY ×' + e.albums.length : ''].filter(Boolean).join(' · '), h: '#' + e.slug, q: norm(e.name) }));
+  D.gigs.forEach(g => { const s = g.artists.length ? BYKEY.get(norm(g.artists[0]))?.slug : g.page;
+    IDX.push({ k: 'Shows', t: g.title, s: fmtDate(g) + (g.venue ? ' · ' + g.venue : ''), h: s ? '#' + s : '#gigs', q: norm([g.title, g.artists.join(' '), g.venue, g.city, g.year].join(' ')) }); });
+  AL.years.forEach(y => y.albums.forEach(a => IDX.push({ k: 'Albums', t: `${a.title} – ${a.artist}`, s: `${y.year}${a.rank ? ' · No. ' + a.rank : ''}`, h: '#albums-' + y.year, q: norm(a.title + ' ' + a.artist + ' ' + y.year) })));
+  const hq = document.getElementById('hq'), hres = document.getElementById('hres');
+  hq.addEventListener('input', () => {
+    const q = norm(hq.value || ''); if (q.length < 2) { hres.hidden = true; return; }
+    const groups = ['Artists', 'Shows', 'Albums'].map(k => [k, IDX.filter(x => x.k === k && x.q.includes(q))]).filter(([, l]) => l.length);
+    hres.hidden = false;
+    hres.innerHTML = groups.length ? groups.map(([k, l]) => `<div><h3>${k} <span class="eyebrow">${l.length}</span></h3><ul>${l.slice(0, k === 'Shows' ? 8 : 6).map(x => `<li><a href="${x.h}"><b>${esc(x.t)}</b><small>${esc(x.s)}</small></a></li>`).join('')}</ul>${l.length > 8 && k === 'Shows' ? `<p class="note" style="margin-top:6px">Showing 8. The <a href="#gigs">gig log</a> has the full list.</p>` : ''}</div>`).join('')
+      : `<p class="note">Nothing matches “${esc(hq.value)}”. Try a band, venue or year.</p>`;
+  });
+  document.addEventListener('click', ev => { if (!ev.target.closest('.search')) hres.hidden = true; });
+  hq.addEventListener('keydown', ev => { if (ev.key === 'Escape') { hres.hidden = true; hq.blur(); } });
+}
+
+/* ---------------- Gig Log ---------------- */
+function buildGigs() {
+  const GIGS = D.gigs;
+  const attended = GIGS.filter(g => g.status === "attended"), gigs = attended.filter(g => g.type === "gig");
+  const years = attended.map(g => g.year).filter(Boolean), minY = Math.min(...years), maxY = Math.max(...years);
+  document.getElementById("bigCount").textContent = attended.length;
+  document.getElementById("yearsSpan").textContent = `${minY}–${maxY}`;
+  const artistCount = new Map(); gigs.forEach(g => new Set(g.artists).forEach(a => artistCount.set(a, (artistCount.get(a) || 0) + 1)));
+  const venueCount = new Map(); attended.forEach(g => { if (g.venue && !/various|venues|TBD/i.test(g.venue)) venueCount.set(g.venue, (venueCount.get(g.venue) || 0) + 1); });
+  const cities = new Set(attended.map(g => g.city).filter(Boolean)), countries = new Set(attended.map(g => g.country));
+  const withPhotos = attended.filter(g => g.photos && g.photos.length).length;
+  const stats = [[gigs.length, "gigs"], [attended.filter(g => g.type === "festival").length, "festivals"], [attended.filter(g => kind(g.type) === "other").length, "club nights & other"],
+    [artistCount.size, "different artists"], [venueCount.size, "named venues"], [cities.size, "cities in " + countries.size + " countries"]];
+  document.getElementById("stats").innerHTML = stats.map(([n, l]) => `<div class="stat"><b class="num">${n}</b><span>${esc(l)}</span></div>`).join("");
+  // chart
+  const ys = []; for (let y = minY; y <= maxY; y++) ys.push(y);
+  const by = Object.fromEntries(ys.map(y => [y, {gig:0, festival:0, other:0}])); attended.forEach(g => { if (g.year) by[g.year][kind(g.type)]++; });
+  const totals = ys.map(y => by[y].gig + by[y].festival + by[y].other), top = Math.ceil(Math.max(...totals) / 10) * 10;
+  const W = 640, H = 260, L = 30, R = 8, T = 10, B = 28, iw = W - L - R, ih = H - T - B, bw = iw / ys.length, yS = v => T + ih - (v / top) * ih;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Shows attended per year">`;
+  for (let v = 0; v <= top; v += 10) s += `<line x1="${L}" x2="${W-R}" y1="${yS(v)}" y2="${yS(v)}" stroke="var(--rule)" stroke-width="1"/><text x="${L-6}" y="${yS(v)+4}" text-anchor="end" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">${v}</text>`;
+  ys.forEach((y, i) => {
+    const x = L + i * bw + bw * .15, w = bw * .7; let base = 0;
+    [["gig","var(--accent)"],["festival","var(--fest)"],["other","var(--club)"]].forEach(([k, c]) => { const v = by[y][k]; if (!v) return;
+      s += `<rect x="${x}" y="${yS(base+v)}" width="${w}" height="${yS(base)-yS(base+v)}" fill="${c}"><title>${y}: ${v} ${k === "other" ? "club nights/other" : k + "s"}</title></rect>`; base += v; });
+    if (totals[i] === 0) s += `<text x="${x+w/2}" y="${yS(0)-6}" text-anchor="middle" font-size="9" font-family="IBM Plex Mono, monospace" fill="var(--muted)">0</text>`;
+    if (i % 2 === 0 || ys.length < 12) s += `<text x="${x+w/2}" y="${H-10}" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">'${String(y).slice(2)}</text>`;
+  });
+  document.getElementById("chart").innerHTML = s + `</svg>`;
+  const peak = ys[totals.indexOf(Math.max(...totals))];
+  document.getElementById("chartNote").textContent = `Busiest year: ${peak} with ${Math.max(...totals)} shows. 2020 has just one: New Colossus in March, the week everything shut down. Everything else booked that year was cancelled.`;
+  // boards
+  const sortDesc = m => [...m.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  const board = (el, entries, n, href) => { const max = entries[0]?.[1] || 1;
+    el.innerHTML = entries.slice(0, n).map(([name, c], i) => { const h = href && href(name);
+      const inner = `<span class="label">${esc(name)}</span><div class="bar" style="width:${(c/max)*100}%"></div>`;
+      return `<li><span class="rank num">${String(i+1).padStart(2,"0")}</span>${h ? `<a class="name" href="${h}">${inner}</a>` : `<button type="button" class="name" data-q="${esc(name)}">${inner}</button>`}<span class="count">${c}</span></li>`; }).join("");
+    el.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { qInput.value = b.dataset.q; render(); document.getElementById("h-log").scrollIntoView({behavior: "smooth"}); })); };
+  board(document.getElementById("topArtists"), sortDesc(artistCount), 12, n => { const e = BYKEY.get(norm(n)); return e && "#" + e.slug; });
+  board(document.getElementById("venues"), sortDesc(venueCount), 10);
+  const cityCount = new Map(); attended.forEach(g => { if (g.city) { const c = g.city.replace(/ NY$/, ""); cityCount.set(c, (cityCount.get(c) || 0) + 1); } });
+  board(document.getElementById("cities"), sortDesc(cityCount), 10);
+  // log
+  const qInput = document.getElementById("q");
+  const TYPES = [["all","All"],["gig","Gigs"],["festival","Festivals"],["other","Club nights & other"],["photos","With photos"]];
+  let typeSel = "all"; try { typeSel = localStorage.getItem("site-type") || "all"; } catch (e) {}
+  if (!TYPES.some(t => t[0] === typeSel)) typeSel = "all";
+  const tf = document.getElementById("typeFilter");
+  tf.innerHTML = TYPES.map(([k, l]) => `<button type="button" class="chipbtn" data-k="${k}" aria-pressed="${k === typeSel}">${l}</button>`).join("");
+  tf.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { typeSel = b.dataset.k; try { localStorage.setItem("site-type", typeSel); } catch (e) {}
+    tf.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x.dataset.k === typeSel)); render(); }));
+  function render() {
+    const q = qInput.value.trim().toLowerCase();
+    const rows = GIGS.filter(g => {
+      if (typeSel === "photos") { if (!(g.photos && g.photos.length) && !g.video) return false; }
+      else if (typeSel !== "all" && kind(g.type) !== typeSel) return false;
+      return !q || [g.title, g.artists.join(" "), g.venue, g.city, g.country, g.year].join(" ").toLowerCase().includes(q);
+    });
+    document.getElementById("countLine").textContent = `${rows.length} of ${GIGS.length} shows`;
+    document.getElementById("rows").innerHTML = rows.map(g => {
+      let who;
+      if (g.artists.length) {
+        const h = g.artists[0];
+        who = link(h) + (g.title !== g.headliner && !g.title.startsWith(g.headliner + " /") ? `<div class="support">${esc(g.title)}</div>` : "") +
+          (g.artists.length > 1 ? `<div class="support">with ${g.artists.slice(1).map(a => link(a)).join(", ")}</div>` : "");
+      } else who = g.page ? `<a class="tag" href="#${g.page}">${esc(g.title)}</a>` : esc(g.title);
+      const page = g.artists.length ? BYKEY.get(norm(g.artists[0]))?.slug : g.page;
+      const n = (g.photos || []).length, cam = (n || g.video) && page ? `<a class="chip cam media-link" href="#${page}">${n ? n + " photo" + (n > 1 ? "s" : "") : ""}${n && g.video ? " + " : ""}${g.video ? "clip" : ""}</a>` : "";
+      const where = [g.venue, g.city].filter(Boolean).map(esc).join("<br><span class='support'>") + (g.venue && g.city ? "</span>" : "");
+      const st = g.status !== "attended" ? ` <span class="pill s-${g.status}">Upcoming</span>` : "";
+      const typeLabel = g.type === "gig" ? "Gig" : g.type === "festival" ? "Festival" : g.type.replace(/^\w/, c => c.toUpperCase());
+      return `<tr><td class="date">${fmtDate(g)}</td><td>${who}${cam ? "<br>" + cam : ""}</td><td>${where || '<span class="support">–</span>'}</td><td><span class="pill t-${kind(g.type)}">${esc(typeLabel)}</span>${st}</td></tr>`;
+    }).join("");
+  }
+  qInput.addEventListener("input", render); render();
+}
+
+/* ---------------- Albums ---------------- */
+let showYear;
+function buildAlbums() {
+  const YEARS = AL.years, COVERS = AL.covers, THUMBS = AL.thumbs;
+  const seenCount = a => { const e = BYKEY.get(norm(a)); return e ? e.gigs.filter(id => GBYID.get(id)?.status === "attended").length : 0; };
+  const pull = a => { const t = (a.text || [])[0] || ''; let o = ''; for (const x of t.split(/(?<=[.!?])\s+/)) { if (o && (o + ' ' + x).length > 220) { o += ' …'; break; } o += (o ? ' ' : '') + x; } return o; };
+  const coversFor = y => [COVERS[y], COVERS[y + '.5']].filter(Boolean);
+  const vidCard = v => v && HOSTED ? `<figure class="yt"><div class="ytf"><iframe src="https://www.youtube-nocookie.com/embed/${esc(v.id)}" title="${esc(v.title || 'YouTube video')}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>${v.title ? `<figcaption>${esc(v.title)}</figcaption>` : ''}</figure>` : v ? `<a class="vid" href="https://www.youtube.com/watch?v=${esc(v.id)}" target="_blank" rel="noopener"><div class="th">${THUMBS[v.id] ? `<img src="${THUMBS[v.id]}" alt="" loading="lazy">` : ''}</div><div class="vt"><small>Video from the post · YouTube ↗</small><b>${esc(v.title || 'Watch on YouTube')}</b></div></a>` : '';
+  const seenChip = a => { const s = seenCount(a), e = BYKEY.get(norm(a)); return s && e ? `<a class="chip" href="#${e.slug}">Seen live${s > 1 ? ' ×' + s : ''}</a>` : ''; };
+  const allAlbums = YEARS.flatMap(y => y.albums.map(a => ({ ...a, year: y.year })));
+  const artists = new Map(); allAlbums.forEach(a => { if (!artists.has(a.artist)) artists.set(a.artist, []); artists.get(a.artist).push(a.year); });
+  const seenArtists = [...artists.keys()].filter(a => seenCount(a) > 0).length;
+  document.getElementById('facts').innerHTML = `<span><b class="num">${YEARS.length}</b> years</span><span><b class="num">${allAlbums.length}</b> albums</span><span><b class="num">${artists.size}</b> artists</span><span><b class="num">${seenArtists}</b> of them seen live</span>`;
+  const rail = document.getElementById('rail');
+  rail.innerHTML = YEARS.map(y => `<a href="#albums-${y.year}" id="y${y.year}">${y.year}</a>`).join('');
+  const prevYears = (artist, year) => (artists.get(artist) || []).filter(x => x < year);
+  showYear = year => {
+    const y = YEARS.find(x => x.year === year) || YEARS[YEARS.length - 1]; year = y.year;
+    rail.querySelectorAll('a').forEach(b => b.setAttribute('aria-current', b.textContent == year));
+    const sel = document.getElementById('y' + year); if (sel) rail.scrollLeft = sel.offsetLeft - rail.offsetLeft - (rail.clientWidth - sel.offsetWidth) / 2;
+    try { localStorage.setItem('aoty-year', year); } catch (e) {}
+    const top = y.albums[0], ranked = y.albums.filter(a => a.rank), extra = y.albums.filter(a => !a.rank);
+    
+    const row = a => { const p = prevYears(a.artist, year);
+      return `<li class="${a.rank === 1 ? 'top' : ''}"><div class="rk">${a.rank ?? '–'}</div><div class="al">
+        <div class="head"><span class="ttl">${esc(a.title)}</span><span class="art">${link(a.artist)}</span>${seenChip(a.artist)}
+        ${p.length ? `<span class="chip quiet">Also ${p.join(', ')}</span>` : ''}</div>
+        ${(a.text || []).length ? `<div class="wr">${a.text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : ''}${a.rank !== 1 ? vidCard(a.video) : ''}</div></li>`; };
+    const cv = coversFor(year);
+    document.getElementById('year').innerHTML = `
+      <div class="lead">
+        <div class="cover"><div class="art" style="--n:${cv.length || 1}">${cv.map((c, i) => `<img src="${c}" alt="${esc(top.artist)} album cover${cv.length > 1 ? ' ' + (i + 1) : ''}">`).join('')}</div>
+          <div class="yr">No. 1 · ${year}</div><div class="t">${esc(top.title)}</div><div class="a">${link(top.artist)}</div></div>
+        ${pull(top) ? `<p class="why">“${esc(pull(top))}”</p>` : ''}
+        ${vidCard(top.video)}
+        <div class="meta"><span>${ranked.length > 1 ? 'Top ' + ranked.length : 'Album of the year'}</span>${seenChip(top.artist)}</div>
+        ${y.note ? `<p class="note">${esc(y.note)}</p>` : ''}
+        ${y.playlist ? plCard(y.playlist, year) : ''}
+      </div>
+      <div><ol class="list">${ranked.map(row).join('')}</ol>
+        ${extra.length ? `<div class="more">Also named as favourites that year</div><ol class="list">${extra.map(row).join('')}</ol>` : ''}</div>`;
+  };
+  document.getElementById('ones').innerHTML = YEARS.map(y => { const a = y.albums[0], cv = coversFor(y.year);
+    return `<a class="one" href="#albums-${y.year}"><div class="mini" style="--n:${cv.length || 1}">${cv.map(c => `<img src="${c}" alt="" loading="lazy">`).join('')}<span class="num">${y.year}</span></div><div class="cap"><b>${esc(a.title)}</b>${esc(a.artist)}</div></a>`; }).join('');
+  const reg = [...artists.entries()].map(([a, ys]) => [a, [...new Set(ys)].sort()]).filter(([, ys]) => ys.length >= 3).sort((x, y) => y[1].length - x[1].length || x[0].localeCompare(y[0]));
+  document.getElementById('most').innerHTML = reg.map(([a, ys]) => `<div><span>${link(a)} <span class="num" style="color:var(--muted)">×${ys.length}</span></span><span class="yrs">${ys.map(v => "'" + String(v).slice(2)).join(' ')}</span></div>`).join('');
+}
+
+/* ---------------- Artists index ---------------- */
+function buildIndex() {
+  const att = e => e.gigs.filter(id => GBYID.get(id)?.status === "attended").length;
+  const hasPics = e => e.gigs.some(id => (GBYID.get(id)?.photos || []).length || GBYID.get(id)?.video);
+  // photo wall: the most recent shows with photos
+  const recent = D.gigs.filter(g => g.photos && g.photos.length).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 14);
+  document.getElementById('wall').innerHTML = recent.map(g => { const s = g.artists.length ? BYKEY.get(norm(g.artists[0]))?.slug : g.page;
+    return `<a href="#${s}"><img data-src="${esc(g.photos[0])}" alt="${esc(g.title)} live"><span>${esc(g.artists[0] || g.title)}</span><small>${fmtDate(g)}${g.venue ? ' · ' + esc(g.venue) : ''}</small></a>`; }).join('');
+  hydrate(document.getElementById('wall'));
+  const F = [["all","All"],["seen","Seen live"],["aoty","In Albums of the Year"],["photos","With photos"],["event","Festivals & nights out"]];
+  let fsel = "all";
+  const fe = document.getElementById('aFilter');
+  fe.innerHTML = F.map(([k, l]) => `<button type="button" class="chipbtn" data-k="${k}" aria-pressed="${k === fsel}">${l}</button>`).join('');
+  fe.querySelectorAll('button').forEach(b => b.addEventListener('click', () => { fsel = b.dataset.k; fe.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.k === fsel)); render(); }));
+  const aq = document.getElementById('aq');
+  function render() {
+    const q = norm(aq.value || '');
+    const list = D.artists.filter(e => {
+      if (fsel === 'seen' && !att(e)) return false;
+      if (fsel === 'aoty' && !e.albums.length) return false;
+      if (fsel === 'photos' && !hasPics(e)) return false;
+      if (fsel === 'event' && e.kind !== 'event') return false;
+      if (!e.gigs.length && !e.albums.length) return false;
+      return !q || norm(e.name).includes(q);
+    });
+    document.getElementById('idxCount').textContent = `${list.length} pages`;
+    const groups = new Map();
+    list.forEach(e => { const n = e.name.replace(/^the /i, ''); let L = n[0].toUpperCase(); if (!/[A-Z]/.test(L)) L = '#'; if (!groups.has(L)) groups.set(L, []); groups.get(L).push(e); });
+    document.getElementById('idx').innerHTML = [...groups.entries()].map(([L, es]) => `<div class="letter"><h3>${L}</h3>${es.map(e => { const a = att(e), y = new Set(e.albums.map(x => x.year)).size;
+      return `<a class="row" href="#${e.slug}"><span class="nm">${esc(e.name)}</span><span class="marks">${a ? `<span class="g">${a}×</span>` : ''}${y ? `<span class="y">AOTY${y > 1 ? '×' + y : ''}</span>` : ''}${hasPics(e) ? '<span class="p">Photos</span>' : ''}</span></a>`; }).join('')}</div>`).join('') || '<p class="empty">No artists match that search.</p>';
+  }
+  aq.addEventListener('input', render); render();
+}
+
+/* ---------------- Artist page ---------------- */
+let LB = { list: [], i: 0, cap: '' };
+function artistPage(e) {
+  const shows = e.gigs.map(id => GBYID.get(id)).filter(Boolean).sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+  const att = shows.filter(g => g.status === 'attended').length;
+  const ment = (e.mentions || []).map(id => GBYID.get(id)).filter(Boolean);
+  const albums = [...e.albums].sort((a, b) => a.year - b.year);
+  const nPics = shows.reduce((n, g) => n + (g.photos || []).length, 0);
+  const tags = [];
+  if (att) tags.push(`<span class="chip">Seen live ×${att}</span>`);
+  if (shows.some(g => g.status === 'upcoming')) tags.push(`<span class="chip">Upcoming</span>`);
+  albums.forEach(a => tags.push(`<a class="chip gold" href="#albums-${a.year}">AOTY ${a.year}${a.rank ? ' · #' + a.rank : ''}</a>`));
+  if (nPics) tags.push(`<span class="chip cam">${nPics} photo${nPics > 1 ? 's' : ''}</span>`);
+  const card = (g, i) => {
+    const [y, m, d] = (g.date || '').split('-');
+    const big = g.date_precision === 'day' ? +d : (g.date_precision === 'month' || g.date_precision === 'approx') ? MONTHS[+m - 1] : y;
+    const small = g.date_precision === 'day' ? `${MONTHS[+m - 1]} ${y}` : (g.date_precision === 'month' || g.date_precision === 'approx') ? y : 'Date not known';
+    const role = e.kind === 'event' ? (g.type === 'festival' ? 'Festival' : g.type.replace(/^\w/, c => c.toUpperCase()))
+      : g.artists[0] && norm(g.artists[0]) === norm(e.name) ? (g.type === 'festival' ? 'Festival' : 'Headline') : g.artists.length ? 'Support / on the bill' : 'Gig';
+    const others = g.artists.filter(a => norm(a) !== norm(e.name));
+    const head = e.kind === 'event' || !g.artists.length ? g.title : (g.title !== g.headliner && !g.title.startsWith(g.headliner + " /") ? g.title : g.artists[0]);
+    const ph = (g.photos || []).map((f, k) => `<button type="button" data-g="${g.id}" data-k="${k}" aria-label="Open photo ${k + 1}"><img data-src="${esc(f)}" alt="${esc(head)}, ${esc(fmtDate(g))}"></button>`).join('');
+    const vid = g.video ? `<div class="clip"><video src="${media(g.video)}" data-src="${esc(g.video.replace('.mp4', '.jpg'))}" controls playsinline preload="none"></video><small>Clip from Instagram</small></div>` : '';
+    const caps = (g.captions || []).map(c => `<blockquote><p>${esc(c.cap)}</p><cite>Posted on Instagram · ${esc(fmtDate({date: c.date, date_precision: 'day'}))}</cite></blockquote>`).join('');
+    const ctags = (g.tags || []).map(s => BYSLUG.get(s)).filter(Boolean).map(t => `<a class="chip quiet" href="#${t.slug}">${esc(t.name)}</a>`).join('');
+    return `<article class="show" id="g${g.id}">
+      <div class="when"><span class="d num">${esc(big)}</span><span class="m">${esc(small)}</span><span class="n">${g.status === 'upcoming' ? 'Upcoming' : 'Show ' + (i + 1) + ' of ' + shows.length}</span></div>
+      <div class="body">
+        <div class="ttl"><span class="eyebrow">${esc(role)}</span><h3>${esc(head)}</h3>
+          <span class="where">${[g.venue, g.city, g.country !== 'US' && g.country !== 'UK' ? g.country : ''].filter(Boolean).map(esc).join(' · ') || 'Venue not recorded'}</span>
+          ${others.length ? `<span class="bill">${g.artists[0] && norm(g.artists[0]) === norm(e.name) ? 'With' : 'Bill'}: ${others.map(a => link(a)).join(', ')}</span>` : ''}</div>
+        ${ph ? `<div class="photos">${ph}</div>` : ''}${vid}
+        ${caps || ctags ? `<div class="ig">${caps}${ctags ? `<div class="tags"><span class="eyebrow">Also mentioned</span>${ctags}</div>` : ''}</div>` : ''}
+        ${!ph && !vid && !caps ? `<p class="empty">No photos from this one.</p>` : ''}
+      </div></article>`;
+  };
+  const v = document.getElementById('v-artist');
+  v.innerHTML = `
+    <a class="crumb" href="#artists">← All artists</a>
+    <header class="ahead"><span class="eyebrow">${e.kind === 'event' ? 'Festival / night out' : 'Artist'}</span><h1>${esc(e.name)}</h1>
+      ${tags.length ? `<div class="tags">${tags.join('')}</div>` : ''}</header>
+    ${albums.length ? `<section class="panel"><div class="panel-head"><h2>In Albums of the Year</h2><span class="eyebrow">${albums.length} ${albums.length > 1 ? 'entries' : 'entry'}</span></div>
+      <div class="aoty">${albums.map(a => `<a class="entry" href="#albums-${a.year}"><span class="yrk num">${a.year}<small>${a.rank ? 'No. ' + a.rank : 'Favourite'}</small></span><span style="display:grid;gap:4px;min-width:0"><span class="et">${esc(a.title)}</span>${a.pull ? `<span class="ep">“${esc(a.pull)}”</span>` : ''}</span></a>`).join('')}</div></section>` : ''}
+    <section class="panel"><div class="panel-head"><h2>${e.kind === 'event' ? 'Editions' : 'Gigs'}</h2><span class="eyebrow">oldest first</span></div>
+      ${shows.length ? `<div class="shows">${shows.map(card).join('')}</div>` : `<p class="empty">Not seen live yet.</p>`}</section>
+    ${ment.length ? `<section class="panel"><div class="panel-head"><h2>Also spotted at</h2><span class="eyebrow">named in an Instagram caption</span></div>
+      <div class="aoty">${ment.map(g => { const s = g.artists.length ? BYKEY.get(norm(g.artists[0]))?.slug : g.page; return `<a class="entry" href="#${s}"><span class="yrk num">${esc((g.date || '').slice(0, 4))}<small>${esc(fmtDate(g))}</small></span><span style="display:grid;gap:4px;min-width:0"><span class="et">${esc(g.title)}</span><span class="ep">${esc(g.venue || '')}</span></span></a>`; }).join('')}</div></section>` : ''}`;
+  hydrate(v);
+  v.querySelectorAll('.photos button').forEach(b => b.addEventListener('click', () => {
+    const g = GBYID.get(+b.dataset.g); LB = { list: g.photos, i: +b.dataset.k, cap: `${g.artists[0] || g.title} · ${fmtDate(g)}` }; openLB();
+  }));
+}
+const lb = document.getElementById('lb');
+function openLB() { const im = document.getElementById('lbImg'); im.removeAttribute('src'); imgURL(LB.list[LB.i]).then(u => { im.src = u; }); document.getElementById('lbImg').alt = LB.cap; document.getElementById('lbCap').textContent = `${LB.cap} · ${LB.i + 1}/${LB.list.length}`; if (lb.hidden) LB.from = document.activeElement; lb.hidden = false; document.getElementById('lbClose').focus(); }
+const closeLB = () => { lb.hidden = true; LB.from?.focus?.(); };
+const step = d => { LB.i = (LB.i + d + LB.list.length) % LB.list.length; openLB(); };
+document.getElementById('lbClose').onclick = closeLB;
+document.getElementById('lbPrev').onclick = () => step(-1);
+document.getElementById('lbNext').onclick = () => step(1);
+lb.addEventListener('click', ev => { if (ev.target === lb) closeLB(); });
+document.addEventListener('keydown', ev => { if (lb.hidden) return; if (ev.key === 'Escape') closeLB();
+  if (ev.key === 'Tab') { const f = [...lb.querySelectorAll('button')]; const i = f.indexOf(document.activeElement); if (ev.shiftKey && i <= 0) { ev.preventDefault(); f[f.length - 1].focus(); } else if (!ev.shiftKey && i === f.length - 1) { ev.preventDefault(); f[0].focus(); } } if (ev.key === 'ArrowLeft') step(-1); if (ev.key === 'ArrowRight') step(1); });
+
+
+/* ---------------- Router ---------------- */
+// Live site: real paths (/albums/2024/, /artists/the-national/) so every page can be indexed and shared.
+// Preview: hash tokens (#albums-2024, #a-the-national). Internal links are written as hash tokens and
+// rewritten to paths on the live site.
+const PATHS = HOSTED;
+const SITE = 'https://paddyjones.com';
+const isTok = t => /^(home|gigs|albums|artists|albums-\d{4}|a-[a-z0-9-]+)$/.test(t);
+const tokToPath = t => t === 'home' ? '/' : t === 'gigs' ? '/gigs/' : t === 'albums' ? '/albums/' : t === 'artists' ? '/artists/'
+  : t.startsWith('albums-') ? `/albums/${t.slice(7)}/` : t.startsWith('a-') ? `/artists/${t.slice(2)}/` : '/';
+function pathToTok(p) {
+  p = p.replace(/index\.html$/, ''); if (!p.endsWith('/')) p += '/';
+  let m;
+  if (p === '/') return 'home';
+  if (p === '/gigs/' || p === '/albums/' || p === '/artists/') return p.slice(1, -1);
+  if ((m = p.match(/^\/albums\/(\d{4})\/$/))) return 'albums-' + m[1];
+  if ((m = p.match(/^\/artists\/([a-z0-9-]+)\/$/))) return 'a-' + m[1];
+  return 'home';
+}
+function curTok() {
+  const h = location.hash.slice(1);
+  if (!PATHS) return h || 'home';
+  if (h && isTok(h)) { history.replaceState(null, '', tokToPath(h)); return h; }
+  return pathToTok(location.pathname);
+}
+function fixLinks(root) {
+  if (!PATHS) return;
+  root.querySelectorAll('a[href^="#"]').forEach(a => { const t = a.getAttribute('href').slice(1); if (isTok(t)) a.setAttribute('href', tokToPath(t)); });
+}
+function setMeta(title, desc, tok) {
+  document.title = title;
+  const set = (sel, attr, v) => { let el = document.head.querySelector(sel); if (el) el.setAttribute(attr, v); };
+  set('meta[name="description"]', 'content', desc); set('meta[property="og:title"]', 'content', title);
+  set('meta[property="og:description"]', 'content', desc); set('meta[name="twitter:title"]', 'content', title);
+  set('meta[name="twitter:description"]', 'content', desc);
+  const url = SITE + tokToPath(tok); set('link[rel="canonical"]', 'href', url); set('meta[property="og:url"]', 'content', url);
+}
+const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
+function metaFor(view, tok) {
+  const att = D.gigs.filter(g => g.status === 'attended');
+  if (view === 'gigs') return [`Gig Log · Paddy Has Needs`, `Every gig Paddy has been to since 2007: ${att.length} shows, with the most-seen bands, venues and cities, and photos from the night.`];
+  if (view === 'albums') { const y = AL.years.find(x => 'albums-' + x.year === tok) || AL.years[AL.years.length - 1], a = y.albums[0];
+    return [`Albums of ${y.year} · Paddy Has Needs`, `Paddy's favourite albums of ${y.year}: number one is ${a.title} by ${a.artist}. ${y.albums.length > 1 ? plural(y.albums.length, 'album') + ' ranked with reviews' + (y.albums.some(a => a.video) ? ' and videos' : '') : 'Review' + (a.video ? ' and video' : '')}${y.playlist ? ', plus his ' + y.year + ' Spotify playlist' : ''}.`]; }
+  if (view === 'artists') return [`Artists · Paddy Has Needs`, `A to Z of every artist Paddy has seen live or picked in his albums of the year, with gig photos and stats.`];
+  if (view === 'artist') { const e = BYSLUG.get(tok), n = e.gigs.filter(id => GBYID.get(id)?.status === 'attended').length, ys = [...new Set(e.albums.map(a => a.year))];
+    return [`${e.name} · Paddy Has Needs`, `${e.name}${n ? ': seen live ' + plural(n, 'time') : ''}${ys.length ? (n ? ', ' : ': ') + 'in Paddy\'s albums of the year ' + ys.join(', ') : ''}. Dates, venues and photos from every show.`]; }
+  return [`Paddy Has Needs · a living music journal`, `Every gig Paddy has been to since 2007 (${att.length} and counting), photos from the pit, his albums of the year since 2010 and a Spotify playlist for every year.`];
+}
+function route() {
+  const h = curTok();
+  let view = 'home';
+  if (h === 'gigs') view = 'gigs';
+  else if (h === 'albums' || h.startsWith('albums-')) { view = 'albums'; let y = +h.split('-')[1]; if (!y) { try { y = +localStorage.getItem('aoty-year'); } catch (e) {} } showYear(y); }
+  else if (h === 'artists') view = 'artists';
+  else if (h.startsWith('a-') && BYSLUG.has(h)) { view = 'artist'; artistPage(BYSLUG.get(h)); }
+  ['home', 'gigs', 'albums', 'artists', 'artist'].forEach(k => document.getElementById('v-' + k).hidden = k !== view);
+  document.querySelectorAll('.nav a.tab').forEach(a => { if (a.dataset.v === view || (view === 'artist' && a.dataset.v === 'artists')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+  const [title, desc] = metaFor(view, h); setMeta(title, desc, view === 'home' ? 'home' : h);
+  fixLinks(document);
+  if (!h.startsWith('albums-') || !route.started) window.scrollTo(0, 0);
+  if (route.started) document.getElementById('main').focus({ preventScroll: true });
+  route.started = true;
+}
+if (PATHS) {
+  new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.nodeType === 1) { if (n.matches?.('a[href^="#"]')) fixLinks(n.parentNode || n); else fixLinks(n); } }))).observe(document.body, { childList: true, subtree: true });
+  document.addEventListener('click', ev => {
+    const a = ev.target.closest('a[href^="/"]');
+    if (!a || ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || a.target === '_blank') return;
+    const href = a.getAttribute('href'); if (href.startsWith('//')) return;
+    ev.preventDefault(); if (href !== location.pathname) history.pushState(null, '', href); route();
+  });
+  window.addEventListener('popstate', route);
+}
+Promise.all([fetch('data.json').then(r => r.json()), fetch('albums.json').then(r => r.json())]).then(([d, al]) => {
+  D = d; AL = al;
+  BYKEY = new Map(D.artists.map(e => [norm(e.name), e])); BYSLUG = new Map(D.artists.map(e => [e.slug, e])); GBYID = new Map(D.gigs.map(g => [g.id, g]));
+  document.getElementById('hYearMore')?.remove();
+  buildGigs(); buildAlbums(); buildIndex(); buildHome();
+  document.getElementById('loading')?.remove();
+  window.addEventListener('hashchange', route); route();
+  document.documentElement.dataset.ready = '1';
+}).catch(err => { const l = document.getElementById('loading'); if (l) l.textContent = 'The site data did not load. Reload the page to try again.'; console.error(err); });
+</script>
+
+
+
+</body></html>
