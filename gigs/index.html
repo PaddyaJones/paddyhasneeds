@@ -69,7 +69,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .skip { position: absolute; left: 12px; top: -60px; z-index: 50; background: var(--accent); color: var(--bg); font-weight: 800; padding: 10px 16px; border-radius: 6px; text-decoration: none; }
 .skip:focus { top: calc(env(safe-area-inset-top, 0px) + 8px); }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-main:focus { outline: none; }
+#main:focus, #main:focus-visible { outline: none; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .num { font-variant-numeric: tabular-nums; }
 .lede { color: var(--muted); }
 .note { font-size: .8rem; color: var(--muted); }
@@ -120,13 +121,15 @@ main:focus { outline: none; }
 .hplay b { font-weight: 900; font-size: 2.4rem; line-height: 1; letter-spacing: -.02em; }
 .hplay a.btn { align-self: flex-start; background: var(--bg); color: var(--ink); text-decoration: none; font-weight: 800; padding: 12px 20px; border-radius: 999px; }
 .hplay iframe { display: block; width: 100%; border: 0; border-radius: 12px; }
+@media (max-width: 600px) { .hlists, .hstats { grid-template-columns: minmax(0, 1fr) !important; } }
 .hlists { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 56px; }
 .hlists h2, .hones h2 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: 12px; }
 .hlists h2 span { color: var(--accent); }
 .hl { list-style: none; margin: 0; padding: 0; display: grid; }
-.hl li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--rule); }
+.hlists > div, .hstats > *, .home-body > * { min-width: 0; }
+.hl li { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; min-width: 0; padding: 14px 0; border-top: 1px solid var(--rule); }
 .hl li:last-child { border-bottom: 1px solid var(--rule); }
-.hl .w { min-width: 0; }
+.hl .w { min-width: 0; flex: 1 1 12rem; overflow-wrap: anywhere; }
 .hl .w a, .hl .w b { font-weight: 800; color: var(--ink); text-decoration: none; }
 .hl .w a:hover { color: var(--accent); }
 .hl .w span { color: var(--muted); }
@@ -145,7 +148,8 @@ main:focus { outline: none; }
 .hones .t span { display: block; font-weight: 400; color: var(--muted); }
 
 /* nav: a strip of ticket tabs */
-@media (max-width: 600px) { .nav .lg { display: none; } .nav a.tab { padding-inline: 10px; letter-spacing: .06em; } .nav-in { justify-content: space-between; } }
+.nav .sh { display: none; }
+@media (max-width: 600px) { .nav .lg { display: none; } .nav .sh { display: inline; } .nav a.tab { padding-inline: 10px; letter-spacing: .06em; } .nav-in { justify-content: space-between; } }
 .nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; margin: 0 calc(-1 * max(16px, env(safe-area-inset-left, 0px))) 0; padding: 0 max(16px, env(safe-area-inset-left, 0px)); background: var(--navbg); }
 @media (max-width: 520px) { .nav .brand { display: none; } }
 .nav-in { max-width: 1200px; margin: 0 auto; display: flex; align-items: stretch; gap: 2px; overflow-x: auto; scrollbar-width: none; }
@@ -351,8 +355,8 @@ li.top .wr p { color: var(--ink); }
   <div class="nav-in">
     <a class="brand" href="/">Paddy Has Needs</a>
     <a class="tab" href="/" data-v="home">Home</a>
-    <a class="tab" href="/gigs/" data-v="gigs" aria-current="page">Gig<span class="lg"> Log</span></a>
-    <a class="tab" href="/albums/" data-v="albums">Albums<span class="lg"> of the Year</span></a>
+    <a class="tab" href="/gigs/" data-v="gigs" aria-current="page"><span class="lg">Gig Log</span><span class="sh">Gigs</span></a>
+    <a class="tab" href="/albums/" data-v="albums"><span class="lg">Albums of the Year</span><span class="sh">Albums</span></a>
     <a class="tab" href="/artists/" data-v="artists">Artists</a>
   </div>
 </nav>
