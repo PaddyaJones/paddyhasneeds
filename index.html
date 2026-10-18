@@ -212,6 +212,13 @@ li.top .rk { color: var(--gold); }
 .wr { display: grid; gap: 8px; margin-top: 2px; }
 .wr p { font-size: .92rem; color: var(--muted); max-width: 68ch; }
 li.top .wr p { color: var(--ink); }
+.plx { margin-top: 18px; display: grid; gap: 8px; }
+.plx .plh { font-family: var(--font-data); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.plx iframe { display: block; width: 100%; border: 0; border-radius: 12px; }
+.yt { margin: 8px 0 0; max-width: 560px; display: grid; gap: 6px; }
+.yt .ytf { position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 6px; overflow: hidden; background: var(--paper); }
+.yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.yt figcaption { font-size: .82rem; color: var(--muted); }
 .vid { display: grid; grid-template-columns: 168px minmax(0, 1fr); gap: 12px; align-items: center; margin-top: 6px; text-decoration: none; color: inherit; max-width: 520px; }
 .vid .th { position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 3px; overflow: hidden; background: var(--rule); }
 .vid .th img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -483,7 +490,7 @@ function hydrate(root) { root.querySelectorAll('[data-src]').forEach(el => { con
   imgURL(f).then(u => { if (el.tagName === 'VIDEO') el.poster = u; else el.src = u; }).catch(() => {}); }); }
 
 
-const plCard = (p, year) => `<a class="pl" href="https://open.spotify.com/playlist/${esc(p.id)}" target="_blank" rel="noopener"><span class="pli" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M6.5 9.2c3.8-1.1 7.8-.8 11 1M7 12.3c3.2-.9 6.6-.6 9.3.9M7.6 15.2c2.6-.7 5.2-.5 7.4.7" stroke="var(--bg)" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></span><span class="plt"><small>Favourite songs of ${year} · Spotify ↗</small><b>${esc(p.title)}</b><span>${p.n} songs · Listen on Spotify</span></span></a>`;
+const plCard = (p, year) => HOSTED ? `<div class="plx"><div class="plh">Favourite songs of ${year} · ${esc(p.title)} · ${p.n} songs</div><iframe src="https://open.spotify.com/embed/playlist/${esc(p.id)}?utm_source=generator&theme=0" height="380" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="${esc(p.title)} on Spotify"></iframe></div>` : `<a class="pl" href="https://open.spotify.com/playlist/${esc(p.id)}" target="_blank" rel="noopener"><span class="pli" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M6.5 9.2c3.8-1.1 7.8-.8 11 1M7 12.3c3.2-.9 6.6-.6 9.3.9M7.6 15.2c2.6-.7 5.2-.5 7.4.7" stroke="var(--bg)" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></span><span class="plt"><small>Favourite songs of ${year} · Spotify ↗</small><b>${esc(p.title)}</b><span>${p.n} songs · Listen on Spotify</span></span></a>`;
 /* ---------------- Home ---------------- */
 const HOSTED = true; // set true by the live build: shows the real Spotify player
 const PLAYLIST_NOW = { year: 2026, id: "0PyaYvtewOYXwGD6dbsnri", title: "2026 Tracks", n: 126 };
@@ -627,7 +634,7 @@ function buildAlbums() {
   const seenCount = a => { const e = BYKEY.get(norm(a)); return e ? e.gigs.filter(id => GBYID.get(id)?.status === "attended").length : 0; };
   const pull = a => { const t = (a.text || [])[0] || ''; let o = ''; for (const x of t.split(/(?<=[.!?])\s+/)) { if (o && (o + ' ' + x).length > 220) { o += ' …'; break; } o += (o ? ' ' : '') + x; } return o; };
   const coversFor = y => [COVERS[y], COVERS[y + '.5']].filter(Boolean);
-  const vidCard = v => v ? `<a class="vid" href="https://www.youtube.com/watch?v=${esc(v.id)}" target="_blank" rel="noopener"><div class="th">${THUMBS[v.id] ? `<img src="${THUMBS[v.id]}" alt="" loading="lazy">` : ''}</div><div class="vt"><small>Video from the post · YouTube ↗</small><b>${esc(v.title || 'Watch on YouTube')}</b></div></a>` : '';
+  const vidCard = v => v && HOSTED ? `<figure class="yt"><div class="ytf"><iframe src="https://www.youtube-nocookie.com/embed/${esc(v.id)}" title="${esc(v.title || 'YouTube video')}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>${v.title ? `<figcaption>${esc(v.title)}</figcaption>` : ''}</figure>` : v ? `<a class="vid" href="https://www.youtube.com/watch?v=${esc(v.id)}" target="_blank" rel="noopener"><div class="th">${THUMBS[v.id] ? `<img src="${THUMBS[v.id]}" alt="" loading="lazy">` : ''}</div><div class="vt"><small>Video from the post · YouTube ↗</small><b>${esc(v.title || 'Watch on YouTube')}</b></div></a>` : '';
   const seenChip = a => { const s = seenCount(a), e = BYKEY.get(norm(a)); return s && e ? `<a class="chip" href="#${e.slug}">Seen live${s > 1 ? ' ×' + s : ''}</a>` : ''; };
   const allAlbums = YEARS.flatMap(y => y.albums.map(a => ({ ...a, year: y.year })));
   const artists = new Map(); allAlbums.forEach(a => { if (!artists.has(a.artist)) artists.set(a.artist, []); artists.get(a.artist).push(a.year); });
