@@ -23,7 +23,7 @@
 <meta name="twitter:title" content="Pulled Apart by Horses · Paddy Has Needs">
 <meta name="twitter:description" content="Pulled Apart by Horses: seen live 2 times, in Paddy's albums of the year 2010. Dates, venues and photos from every show.">
 <meta name="twitter:image" content="https://paddyjones.com/og.jpg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://paddyjones.com/#site", "url": "https://paddyjones.com/", "name": "Paddy Has Needs", "description": "Every gig Paddy has been to since 2007 (389 and counting), photos from the pit, his albums of the year since 2010 and a Spotify playlist for every year.", "inLanguage": "en", "author": {"@id": "https://paddyjones.com/#paddy"}}, {"@type": "Person", "@id": "https://paddyjones.com/#paddy", "name": "Paddy Jones", "url": "https://paddyjones.com/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://paddyjones.com/#site", "url": "https://paddyjones.com/", "name": "Paddy Has Needs", "description": "Every gig Paddy has been to since 2007 (394 and counting), photos from the pit, his albums of the year since 2010 and a Spotify playlist for every year.", "inLanguage": "en", "author": {"@id": "https://paddyjones.com/#paddy"}}, {"@type": "Person", "@id": "https://paddyjones.com/#paddy", "name": "Paddy Jones", "url": "https://paddyjones.com/"}]}</script>
 
 
 
@@ -388,8 +388,8 @@ li.top .wr p { color: var(--ink); }
     <section class="strip bleed" id="hStrip" aria-label="Gig photos"></section>
     <div class="home-body">
       <section class="hstats">
-        <div class="hstat"><span class="lbl">Shows seen *since 2007</span><span class="fig num" id="hTotal">389</span><span class="sub" id="hSplit">322 gigs, 53 festivals, 14 club nights</span></div>
-        <div class="hstat"><span class="lbl">Most seen</span><span class="fig o num" id="hMostN">17</span><span id="hMostName"><a class="nm" href="/artists/the-national/">The National</a></span><span class="sub" id="hMostRun"><a class="" href="/artists/ezra-furman/">Ezra Furman</a> 10 · <a class="" href="/artists/jeff-rosenstock/">Jeff Rosenstock</a> 10 · <a class="" href="/artists/the-magnetic-fields/">The Magnetic Fields</a> 9</span></div>
+        <div class="hstat"><span class="lbl">Shows seen *since 2007</span><span class="fig num" id="hTotal">394</span><span class="sub" id="hSplit">322 gigs, 58 festivals, 14 club nights &amp; other</span></div>
+        <div class="hstat"><span class="lbl">Most seen</span><span class="fig o num" id="hMostN">19</span><span id="hMostName"><a class="nm" href="/artists/the-national/">The National</a></span><span class="sub" id="hMostRun"><a class="" href="/artists/ezra-furman/">Ezra Furman</a> 10 · <a class="" href="/artists/jeff-rosenstock/">Jeff Rosenstock</a> 10 · <a class="" href="/artists/the-magnetic-fields/">The Magnetic Fields</a> 9</span></div>
         <div class="hstat hplay" id="hPlay"><span class="lbl">Playlist · 2026</span><b>2026 Tracks</b><iframe src="https://open.spotify.com/embed/playlist/0PyaYvtewOYXwGD6dbsnri?utm_source=generator&amp;theme=0" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="2026 Tracks on Spotify"></iframe></div>
       </section>
       <section class="hlists">
@@ -414,7 +414,7 @@ li.top .wr p { color: var(--ink); }
       </div>
       <div class="stub-side">
         <span class="eyebrow">Shows attended</span>
-        <span class="big num" id="bigCount">389</span>
+        <span class="big num" id="bigCount">394</span>
         <span class="eyebrow" id="yearsSpan">2007–2026</span>
       </div>
     </header>
@@ -443,7 +443,7 @@ li.top .wr p { color: var(--ink); }
       </section>
     </div>
     <section class="panel" aria-labelledby="h-log">
-      <div class="panel-head"><h2 id="h-log">The full log</h2><span class="count-line" id="countLine">394 of 394 shows</span></div>
+      <div class="panel-head"><h2 id="h-log">The full log</h2><span class="count-line" id="countLine">399 of 399 shows</span></div>
       <div class="controls">
         <input type="search" id="q" placeholder="Search band, venue, city or year" aria-label="Search the log">
         <div class="controls" role="group" aria-label="Filter by type" id="typeFilter"></div>
@@ -485,7 +485,7 @@ li.top .wr p { color: var(--ink); }
       <div class="wall" id="wall"></div>
     </section>
     <section class="panel" aria-labelledby="h-idx">
-      <div class="panel-head"><h2 id="h-idx">A to Z</h2><span class="count-line" id="idxCount">453 pages</span></div>
+      <div class="panel-head"><h2 id="h-idx">A to Z</h2><span class="count-line" id="idxCount">479 pages</span></div>
       <div class="controls">
         <input type="search" id="aq" placeholder="Find an artist or festival" aria-label="Find an artist">
         <div class="controls" role="group" aria-label="Filter artists" id="aFilter"></div>
@@ -570,7 +570,7 @@ function buildHome() {
     `<a href="${p.slug ? '#' + esc(p.slug) : '#gigs'}"><img src="${esc(p.file)}" alt="${esc(p.title)} live" loading="lazy"><span>${esc(p.title)}${p.venue ? ' · ' + esc(p.venue) : ''}</span></a>`).join('');
   // stats
   document.getElementById('hTotal').textContent = att.length;
-  document.getElementById('hSplit').textContent = `${gigsOnly.length} gigs, ${att.filter(g => g.type === "festival").length} festivals, ${att.filter(g => kind(g.type) === "other").length} club nights`;
+  document.getElementById('hSplit').textContent = `${gigsOnly.length} gigs, ${att.filter(g => g.type === "festival").length} festivals, ${att.filter(g => kind(g.type) === "other").length} club nights & other`;
   const cnt = new Map(); seenAt.forEach(g => new Set(g.artists.map(canon)).forEach(a => cnt.set(a, (cnt.get(a) || 0) + 1)));
   const top = [...cnt.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
   document.getElementById('hMostN').textContent = top[0][1];
